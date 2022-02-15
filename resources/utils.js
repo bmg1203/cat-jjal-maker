@@ -16,7 +16,7 @@ const jsonLocalStorage = {
   },
 };
 
-const fetchCat = async (text) => {
+const fetchCat = async (text) => { //cataas open API 받아오는 함수
   const OPEN_API_DOMAIN = "https://cataas.com";
   const response = await fetch(`${OPEN_API_DOMAIN}/cat/says/${text}?json=true`);
   const responseJson = await response.json();
